@@ -155,10 +155,14 @@ const TaskModal = ({ isOpen, task, onClose, onSubmit, saving }) => {
                   onChange={handleChange}
                 />
 
-                <CalendarCheck2Icon
-                  style={{ position: "absolute", right: "16" }}
-                  size={19}
-                />
+                <div
+                  style={{
+                    position: "absolute",
+                    right: "1rem",
+                  }}>
+                  <CalendarCheck2Icon size={19} />
+                  <span>→</span>
+                </div>
               </div>
             </div>
           </div>
